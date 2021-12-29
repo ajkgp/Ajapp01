@@ -2,7 +2,7 @@ replicaCount: 2
 k8s:
   namespace: "default"
 app:
-  name: "actiondemo01-api"
+  name: "Ajapp01-api"
 service:
   port: "5000"
 metrics:
@@ -14,12 +14,12 @@ memory:
   target: "413Mi"
   #This is 85% of the memory limit set.
 pv:
-  name: "actiondemo01sc"
+  name: "Ajapp01sc"
 pvc:
-  name: "actiondemo01pvc"
+  name: "Ajapp01pvc"
 
 image:
-  repository: "barclaysacr02.azurecr.io/actiondemo01"
+  repository: "barclaysacr02.azurecr.io/Ajapp01"
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 imagePullSecrets:
